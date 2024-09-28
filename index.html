@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>主页</title>
+</head>
+
+    <style>
+        /* xr-tag {
+            display: none;
+            pass
+        } */
+        hh {
+            display: block;
+        }
+    </style>
+
+<body>
+    <XR-tag>XR</XR-tag>
+    <h1>主页</h1>
+    <p>aa<hh class="hh"></hh>bb</p>
+</body>
+    <script>
+        Hide_text = (label) => {
+            labels = document.querySelector(label);
+            old_innerHTML = labels.innerHTML;
+            labels.innerHTML = "";
+            labels.innerTEXT = "";
+            // delete old_innerHTML
+            return old_innerHTML
+        }
+
+        Hide_text("XR-tag")
+    </script>
+</html>
